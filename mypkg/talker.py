@@ -12,7 +12,6 @@ class Talker(Node):
 
 
     def cb(self):
-        global n
         msg = Float16()
         msg.data = self.n
         self.pub.publish(msg)
@@ -20,5 +19,6 @@ class Talker(Node):
         self.n = 100000.0 * 0.18 / 365.0 * self.m
 
 def main():
-    node.create_timer(1.0, cb)
+    rclpy.init()
+    node = Talker()
     rclpy.spin(node)
