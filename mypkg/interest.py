@@ -5,7 +5,7 @@ from std_msgs.msg import Float32
 class Talker(Node):
     def __init__(self):
         super().__init__("talker")
-        self.pub = self.create_publisher(Float32, "countup", 10)
+        self.pub = self.create_publisher(Float32, "kane", 10)
         self.create_timer(1.0, self.cb)
         self.n = 0.0
         self.m = 0.0

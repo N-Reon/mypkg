@@ -13,5 +13,5 @@ def cd(msg):
 
 
 def main():
-    sub = node.create_subscription(Float32, "countup", cd, 10)
+    sub = node.create_subscription(Float32, "kane", cd, 10)
     rclpy.spin(node)
