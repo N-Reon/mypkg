@@ -6,22 +6,16 @@
 このプログラムは10万円を年利18%で借りたときの  
 1日ごとの利息を出力するROS2のパッケージです。  
 
-## 利用方法
-利用方法は以下の通りです。  
-1, clone する。  
-'''bash
-$ git clone https://github.com/N-Reon/mypkg.git
-'''  
-2, ros2_ws に移動する。  
-'''bash  
-$ cd ros2_ws  
-'''  
-
-
 ## 実行例
 - 送信側
+```bash  
+$ ros2 run mypkg interest  
+```  
 
-- 受信側
+- 受信側  
+```bash  
+$ ros2 topic echo /kane  
+```  
 ## ライセンス
 このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 このコマンドは以下のサイトを参考にしています。
