@@ -7,6 +7,7 @@
 listener.pyはテスト用に残してあります。  
   
 ## ノード  
+- ノード名 : interest  
 - 10万円を年利18%で借りたときの1日ごとの利息を送信します。 
  
 ## トピック  
@@ -46,16 +47,13 @@ data: 542.0
 ---
 ```
 
-## ライセンス  
-- このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます。  
-- このコマンドは以下のサイトを参考にしています。
+## 参考サイト
+- このコマンドは以下のサイトを参考にしています。  
 https://www.aiful.co.jp/cardloan/interest-rates-overview/  
-    
-- © 2024 Reon Nukui  
 
 ## 必要なソフトウェア
 - Python
-  - テスト済みバージョン: 3.7 ~ 3.11  
+  - テスト済みバージョン: 3.10  
 
 - テストに利用したコンテナ  
   - https://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2  
@@ -63,3 +61,7 @@ https://www.aiful.co.jp/cardloan/interest-rates-overview/
 ## テスト環境
 - Ubuntu 20.04 LTS
 - ROS 2 foxy
+
+## ライセンス
+- このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます。  
+- © 2024 Reon Nukui
